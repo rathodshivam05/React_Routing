@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+.Navbar{
+  background-color: teal;
+  height: 45px;
+  font-size: 25px;
+}
+.Navbar a{
+  color: black;
+  text-decoration: none;
+}
+.Navbar a:hover{
+  color: pink;
+}
+body {
+  background: #dedede;
+}
+.page-wrap {
+  min-height: 100vh;
+}
