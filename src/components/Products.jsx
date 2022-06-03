@@ -6,14 +6,15 @@ export const Products = () => {
   const [product, setproduct] = useState([])
   
   useEffect(() => {
-    axios.get("http://localhost:8080/products/").then((r)=>{console.log(r)
+    axios.get("http://localhost:8080/products/").then((r)=>{
+      //console.log(r)
   setproduct(r.data)})
   }, [])
   
   return (
     <div>
       <h1>All Products</h1>
-      <table className="w-75 mx-auto table table-dark table-striped">
+      <table className="w-75 mx-auto table table-danger table-striped">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -24,7 +25,7 @@ export const Products = () => {
   </thead>
   <tbody>
       {product.map((item)=>{return(
-        <tr>
+        <tr key={item.id}>
           <td>{item.id+1}</td>
           <td>{item.name}</td>
           <td>{item.price}</td>

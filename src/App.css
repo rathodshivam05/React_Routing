@@ -3,16 +3,16 @@
 }
 
 .Navbar{
-  background-color: teal;
+  background-color: black;
   height: 45px;
   font-size: 25px;
 }
 .Navbar a{
-  color: black;
+  color: white;
   text-decoration: none;
 }
 .Navbar a:hover{
-  color: pink;
+  color: crimson;
 }
 body {
   background: #dedede;
